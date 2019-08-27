@@ -2,8 +2,8 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
+    title: `Topspinppy blog`,
+    author: `Topspinppy`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
@@ -14,14 +14,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
+        path: path.resolve(`${__dirname}/content/blog`),
         name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: path.resolve(`${__dirname}/content/assets`),
         name: `assets`,
       },
     },
@@ -76,28 +76,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        plugins: [
-        {
-          resolve: "gatsby-remark-embed-youtube",
-          options: {
-            width: 800,
-            height: 400
-          }
-        }
-        ]
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
   ],
 }

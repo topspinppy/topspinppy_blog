@@ -13,21 +13,13 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={siteTitle} posttitle={post.frontmatter.title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
         <article>
           <header>
-            <h1
-              style={{
-                marginTop: rhythm(1),
-                marginBottom: 0,
-              }}
-            >
-              {post.frontmatter.title}
-            </h1>
             <p
               style={{
                 ...scale(-1 / 5),
@@ -81,7 +73,6 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate
-
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
