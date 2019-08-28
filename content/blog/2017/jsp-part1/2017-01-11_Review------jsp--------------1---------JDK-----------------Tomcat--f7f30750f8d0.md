@@ -16,7 +16,7 @@ slug: >-
 
 การติดตั้งโปรแกรมเพื่อใช้งานภาษา JSP นั้นไม่ใช่เรื่องยาก (แต่ยากมากตอนทำครั้งแรกเนี่ย หัวร้อนชิบ) ที่สำคัญเราจะต้องมี JDK และเราก็ไปหาพวกโปรแกรมจำลอง Server มาติตดั้ง ในที่นี้จะขอใช้ Tomcat เพราะในห้องเรียนใช้ Tomcat ยังไม่เคยลองตัวอื่นฮ่ะะะ
 
-![อีแมวนรกกก!!!](\img\1__ZCQPxRNLhoNgOJzVFwUxLw.jpeg)
+![อีแมวนรกกก!!!](./img/1__ZCQPxRNLhoNgOJzVFwUxLw.jpeg)
 อีแมวนรกกก!!!
 
 > อ๋อ ผมเพิ่งไปหาข้อมูลมา Tomcat น่าจะเหมาะที่สุดละกับการเขียน JSP (คิดเอาเอง เพราะติดตั้งง่าย มันดูไม่เยอะ จัดการง่ายดี ใช้ได้กับทุก OS  
@@ -28,53 +28,53 @@ slug: >-
 2\. jakarta-tomcat-5.0.16 (นี่ก็โบว์พอกัน)   
 สำหรับในห้องเรียนใช้ Windows 7 สามารถ Install ได้ปกติ แต่ โน๊ตบุคผมใช้ Windows 10 เรามาดูกันว่ามันจะใช้ได้มั้ย
 
-![แถ่แดดดด!!! jdk 32bit กับ tomcat 5.0](\img\1__MSlR__2qPOVgVHqKNB1EJdQ.png)
+![แถ่แดดดด!!! jdk 32bit กับ tomcat 5.0](./img/1__MSlR__2qPOVgVHqKNB1EJdQ.png)
 แถ่แดดดด!!! jdk 32bit กับ tomcat 5.0
 
 มาเริ่มกันที่โปรแกรมแรก jdK นะฮ้าบบบบบ  
 **Step 1 :** ดับเบิ้ลคลิก กลิ๊กกลิ๊ก รอมันโหลดแพ๊พ
 
-![](\img\1__MSlR__2qPOVgVHqKNB1EJdQ.png)
+![](./img/1__MSlR__2qPOVgVHqKNB1EJdQ.png)
 
 Step2 : กด Accept เลยแก และก็ Next วนไป
 
-![](\img\1__OnR4OfJwndLSk3ZCymsE8w.png)
+![](./img/1__OnR4OfJwndLSk3ZCymsE8w.png)
 
 **Step 3 :** ระบุโฟลเดอร์ที่ติดตั้ง ให้ใช้ค่าตามนั้นเลย
 
-![](\img\1__M____EuXRkmDfnHFozmzwRXQ.png)
+![](./img/1__M____EuXRkmDfnHFozmzwRXQ.png)
 
 **Step 4 :** เลือก web browser ที่มีติดตั้งในเครื่อง โดย JVM จะเป็นตัว ช่วยในการรันโค๊ดภาษา Java
 
-![](\img\1__VDSwIUIlofPketykveuQWA.png)
+![](./img/1__VDSwIUIlofPketykveuQWA.png)
 
 **Step 5 : นอนตีพุง รอวนไป จนเสร็จ …**
 
-![](\img\1____cQtDzXJHJobwMS91OsijQ.png)
-![](\img\1__H__91CsL7rxW7ZniNi__N9Ew.png)
+![](./img/1____cQtDzXJHJobwMS91OsijQ.png)
+![](./img/1__H__91CsL7rxW7ZniNi__N9Ew.png)
 
 ### Set Path ให้มันก่อนใช้งานนะ
 
 สำหรับวินโดว์ 10 ให้คลิกขวาที่ This PC — -> เลือก Properties
 
-![เลือก properties](\img\1__u67BRlrJIZaa1OQREmS6UA.png)
+![เลือก properties](./img/1__u67BRlrJIZaa1OQREmS6UA.png)
 เลือก properties
 
 จะปรากฎหน้าต่างขึ้นมา ให้คลิกที่ Advanced System Settings จะปรากฎหน้าจอ System Properties ดังรูป
 
-![](\img\1__SurHHXGNMxRtArXUvdwYxw.png)
+![](./img/1__SurHHXGNMxRtArXUvdwYxw.png)
 
 จากนั้นให้คลิกที่ Environment Variables… (จุดตามกระแส)
 
-![](\img\1__US614dcMpUWF2cze8v__eMg.png)
+![](./img/1__US614dcMpUWF2cze8v__eMg.png)
 
 จะปรากฎหน้าต่าง System Variable เลื่อนหาคาว่า PATH ดูว่ามีหรือยัง (1) โดยกด Edit (2) ถ้ามี ก็ให้เพิ่ม Directory j2sdk ที่เราลงไปตอนแรก ซึ่งในที่นี้อยู่ใน Drive C: เพิ่มลงไปต่อท้าย โดยกด New แล้วใส่ Directory ลงไป (3) \*\*\* ทำตามภาพ ละกด Ok ที่มี และปิด
 
-![](\img\1__g24dzdbC9KGm6jpjUnZpyQ.png)
+![](./img/1__g24dzdbC9KGm6jpjUnZpyQ.png)
 
 ทดสอบว่า Path ที่เรา Set แล้วว่าได้ผลมั้ย ให้ไปที่ command promt ของ Windows ทดสอบพิมพ์คำว่า javac ดู ถ้าขึ้นหน้าต่างแบบนี้ ก็ถือว่าได้แล้วจ้าาา
 
-![](\img\1__F2pi5t3gdxp1__m8uOPc1bQ.png)
+![](./img/1__F2pi5t3gdxp1__m8uOPc1bQ.png)
 
 ทีนี้เราจะยังรัน jsp ไม่ได้ เพราะว่ายังไม่มีตัวจำลอง Server ทีนี้เราจะมาลง Tomcat กันน
 
@@ -82,39 +82,39 @@ Step2 : กด Accept เลยแก และก็ Next วนไป
 
 **Step1 :** หน้าจอต้อนรับ ของมัน Next ไปเหอะ
 
-![](\img\1__G7sD9u__I__jcNLerCRqEw0Q.png)
+![](./img/1__G7sD9u__I__jcNLerCRqEw0Q.png)
 
 **Step2 :** มาถึงหน้าจอของ License Agreement แสดงสิทธิการใช้งาน กด I Agree (โอเคยอมรับแต่โดยดี)
 
-![](\img\1__pcDeSLpv2LTXXuaRBH1dwQ.png)
+![](./img/1__pcDeSLpv2LTXXuaRBH1dwQ.png)
 
 **Step3 :** เลือกชุดโปรแกรมที่จะติดตั้ง ตามภาพ ให้ใช้ Normal
 
-![](\img\1__dTakHZC9Calz6tCbDHRc3w.png)
+![](./img/1__dTakHZC9Calz6tCbDHRc3w.png)
 
 **Step4 :** ตรง Destination Folder ให้ แก้จากชื่อย๊าวยาว เป็น C:\\Tomcat เพื่อเวลาเราจะเรียกใช้ อัพไฟล์ไปทดสอบบน localhost จะได้สะดวก จากนั้น Next !
 
-![](\img\1__nQO4cDPSGeIydSUEICdC1Q.png)
+![](./img/1__nQO4cDPSGeIydSUEICdC1Q.png)
 
 **Step5 :** Http port ให้คงเดิม และตั้ง username /password ที่สามารถจำได้ง่าย และกด Next
 
-![](\img\1__5RnxtdDLQb__0BVn7HJp8NQ.png)
+![](./img/1__5RnxtdDLQb__0BVn7HJp8NQ.png)
 
 **Step6 :** เลือก Path ที่ติดตั้ง JDK ซึ่งที่ติดตั้งในข้างต้นเราติดตั้งไว้ drive C ข้างหน้าสุด ให้เปลี่ยนตาม Path ที่เราติดตั้ง \[C:\\j2sdk1.4.2\_19\]
 
-![](\img\1__1139OLOxcv0gtIYGDLuwXw.png)
+![](./img/1__1139OLOxcv0gtIYGDLuwXw.png)
 
 **Step7 : รอวนไป**
 
-![](\img\1__qiHmDQw__cRrk0KERxnTEZQ.png)
+![](./img/1__qiHmDQw__cRrk0KERxnTEZQ.png)
 
 **Step8 : เสร็จแล้วกด Finish**
 
-![](\img\1__Sp7yGL646__fn4cTD0tgD1g.png)
+![](./img/1__Sp7yGL646__fn4cTD0tgD1g.png)
 
 ทดสอบหน่อยสิ๊ ว่าติดม๊ายย ให้หาเบราเซอร์ที่ชอบมาซัก 1 อัน ในที่นี้จะใช้ Internet Explorer เพราะชอบในความ Classic ของมัน ก่อนใช้งาน กด Start Tomcat ก่อนนะ ซึ่งตัวโปรแกรมอยู่ใน Startmenu ลองหาดู
 
-![อัยย๊ะ ติดละโว้ยยยยย](\img\1__UGpppjBbLLpLU2t93KKi9g.png)
+![อัยย๊ะ ติดละโว้ยยยยย](./img/1__UGpppjBbLLpLU2t93KKi9g.png)
 อัยย๊ะ ติดละโว้ยยยยย
 
 เรากลับมาดูเรื่อง Path กันต่อ ให้คลิกจนมาถึงหน้า Set Path แบบนี้ ถ้าลืม ย้อนกลับไปดูด้านบนนาจาาา
@@ -123,24 +123,24 @@ Step2 : กด Accept เลยแก และก็ Next วนไป
 
 ภาพนี้ ตรง Variable name ให้ใส่ JAVA\_HOME และ Vairable value ให้ใส่ Path ที่ jdk ติดตั้งอยู่ ซึ่งแล้วแต่เครื่องด้วยนะฮะ อันนี้ แต่ถ้าตามบล็อคนี้ ให้ยึดตามด้านล่างเลยจ้า
 
-![](\img\1__XFak2r6orshfC6ZXtDwXMQ.png)
+![](./img/1__XFak2r6orshfC6ZXtDwXMQ.png)
 
 > _\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_Set อันที่ 2 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\__
 
 ภาพนี้ ตรง Variable name ให้ใส่ CATALINA\_HOME และ Vairable value ให้ใส่ Path ที่ TOMCAT ติดตั้งอยู่ ซึ่งแล้วแต่เครื่องด้วยนะฮะ อันนี้ แต่ถ้าตามบล็อคนี้ ให้ยึดตามด้านล่างเลยจ้า
 
-![](\img\1__cDIYS1ybNEEEkqA__EzNuNA.png)
+![](./img/1__cDIYS1ybNEEEkqA__EzNuNA.png)
 
 ทีนี้มาทดลองโปรแกรมกันว่าสามารถใช้งานได้มั้ย?  
 พิมพ์ [http://localhost:8080/jsp-examples/](http://localhost:8080/jsp-examples/) จะเป็นตัวอย่างโปรแกรมที่ได้ติดตั้งไว้ใน Tomcat ให้ลองคลิก Execute ดู ถ้าโปรแกรมตัวอย่างสามารถทำงานได้ แสดงว่า การติดตั้ง JSP สามารถใช้งานได้
 
-![เปิดได้แล้ว ลองคลิก Excecute ดู](\img\1__JJeyPYVDtTvAlkmC3dRdiA.png)
-เปิดได้แล้ว ลองคลิก Excecute ดู![++++ Hello World ++++](\img\1__3J515vkA6q5xkfDPdwrTNw.png)
+![เปิดได้แล้ว ลองคลิก Excecute ดู](./img/1__JJeyPYVDtTvAlkmC3dRdiA.png)
+เปิดได้แล้ว ลองคลิก Excecute ดู![++++ Hello World ++++](./img/1__3J515vkA6q5xkfDPdwrTNw.png)
 ++++ Hello World ++++
 
 ทีนี้ Directory ที่ใช้ในการ Run ตอนเราเขียน code จะอยู่ ที่ webapps\\ROOT ภายใต้โฟลเดอร์ของ Tomcat ที่ติดตั้ง โดยสามารถเรียกดูด้วย Web browser ตอนนี้สำหรับเครื่องผม Set Path ก็สามารถใช้งานได้ปกติครับ
 
-![มาแล้ว HelloWorld](\img\1__ABkIa4EEvXFz0j8jYUMUsA.png)
+![มาแล้ว HelloWorld](./img/1__ABkIa4EEvXFz0j8jYUMUsA.png)
 มาแล้ว HelloWorld
 
 ถ้าเครื่องใครมีปัญหา มันรันไม่ขึ้น มีวิธีแก้ไขง่ายๆคือ ต้องย้ายไฟล์ tools ที่อยู่ใน folder j2sdk ซึ่ง Path จะอยู่ใน C:\\j2sdk1.4.2\_19\\lib ไปไว้ ใน C:\\Tomcat\\common\\lib ด้วยนะเออ
