@@ -66,7 +66,7 @@ export default class Example extends React.Component {
                     }                  
                   `}
                   render={data => (
-                    <img src={data.allImageSharp.edges[0].node.original.src} width="70px"/>
+                    <img src={data.allImageSharp.edges[0].node.original.src} width="70px" />
                   )}
                />
             </NavbarBrand>
@@ -77,7 +77,7 @@ export default class Example extends React.Component {
                     <NavLink href="/components/">Components</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                    <NavLink href="https://github.com/reactstrap/reactstrap">About Me</NavLink>
                 </NavItem>
                 <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
