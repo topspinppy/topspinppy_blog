@@ -5,7 +5,7 @@ description: >-
 date: '2019-08-28T17:33:00.122Z'
 ---
 
-![ขอบคุณ URL: https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/](\img\gatsby.png)
+![ขอบคุณ URL: https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/](./img/gatsby.png)
 
 #### Hi สวัสดีทุกคน ~
 อย่าเรียกว่าเล่าละกัน ให้เรียกว่าอยากบ่น 5555 ยินดีกับตัวเองที่เข้าสู่บ้านหลังใหม่อย่างสมบูรณ์แบบ จริงๆมันเป็นความเท่อย่างนึงนะไม่รู้สิ เราใช้บน Medium มา 3 ปี มีความรู้สึกว่าทำไมเราไม่มีเป็นของตัวเองบ้าง ซึ่งเอาจริงๆเคยคิดจะทำหลายรอบละ ตั้งแต่ จดโดเมน เช่าโฮสต์ php ยุคก่อนโน้น แล้วลง WordPress เมื่อสมัย ปี 1 
@@ -17,7 +17,7 @@ date: '2019-08-28T17:33:00.122Z'
 เอาเถอะ เรื่องมันมีอยู่ว่าเรามีโอกาสได้ไปงาน Gatsby Developer Meetup #1 
 
 
-![gatsby event](\img\event.png)
+![gatsby event](./img/event.png)
 
 
 เราก็เข้าไปฟังกับ ฝน พี่กัน และก็ พี่ไอซ์ ที่เราไปด้วยกัน ซึ่งในภาพรวมของงาน ส่วนใหญ่ พี่ๆ Speaker ก็จะนำประสบการณ์การใช้งาน Gatsby มาเล่าให้ฟัง ว่ามันเป็นลักษณะไหน และก็มีการเล่าสู่กันฟังว่า กว่าจะย้าย Blog ออกมาจาก Wordpress หรือ อื่นๆ ยากลำบากขนาดไหน 
@@ -26,7 +26,7 @@ date: '2019-08-28T17:33:00.122Z'
 
 สุดท้ายมาจบที่ Inbox หลังจากกลับมาจากงาน ถามพี่ Arnondora ซะเลย เพราะจะถามที่งานแล้วแต่ลืมคำถาม กรรมมากๆ T T
 
-![gatsby event](\img\arnondora.png)
+![gatsby event](./img/arnondora.png)
 
 วาร์ปเพจ : https://www.facebook.com/arnondora/
 

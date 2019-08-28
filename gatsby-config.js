@@ -5,9 +5,9 @@ module.exports = {
     title: `Topspinppy blog`,
     author: `Topspinppy`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://topspin.xyz/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `xx`,
     },
   },
   plugins: [
