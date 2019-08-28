@@ -1,16 +1,11 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
+ 
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, postcontent }) {
+  console.log('SEO => ', postcontent)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -51,6 +46,16 @@ function SEO({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
+        // {
+        //   property: 'og:image',
+        //   content:
+        //     get(this.props.postContent.frontmatter, 'image', null) ===
+        //     null
+        //       ? ''
+        //       : data.site.siteMetadata.siteUrl +
+        //         this.props.postContent.frontmatter.image.childImageSharp
+        //           .fluid.src,
+        // },
         {
           name: `twitter:card`,
           content: `summary`,

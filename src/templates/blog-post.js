@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from 'reactstrap'
@@ -9,12 +8,14 @@ import { Container } from 'reactstrap'
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
+    console.log(`=>>>>>>`,post)
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle} posttitle={post.frontmatter.title}>
         <SEO
+          postcontent={post}
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
@@ -26,10 +27,6 @@ class BlogPostTemplate extends React.Component {
               </p>
             </header>
             <section dangerouslySetInnerHTML={{ __html: post.html }} />
-            <hr />
-            {/* <footer>
-              <Bio />
-            </footer> */}
           </article>
         
         <nav>

@@ -3,6 +3,7 @@ title: 'บ่นๆ + เล่าเรื่องจากการย้า
 description: >-
   ใครจะไปคิ๊ดดดดว่ามันจะง่ายขนาดนี้
 date: '2019-08-28T17:33:00.122Z'
+thumbnail: './img/event.png'
 ---
 
 ![ขอบคุณ URL: https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/](./img/gatsby.png)
