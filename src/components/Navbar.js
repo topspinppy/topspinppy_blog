@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   Collapse,
   Navbar as DefaultNavbar,
@@ -7,11 +7,8 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Container } from 'reactstrap';
+  Container,
+  Badge } from 'reactstrap';
 import styled from "styled-components"
 import { graphql, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
@@ -66,10 +63,13 @@ export default class Example extends React.Component {
                     }                  
                   `}
                   render={data => (
-                    <img src={data.allImageSharp.edges[0].node.original.src} width="70px" />
+                    <Fragment>
+                      <img src={data.allImageSharp.edges[0].node.original.src} width="70px" />
+                    </Fragment>
                   )}
                />
             </NavbarBrand>
+            <Badge color="danger">Beta Version</Badge>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react"
-import { rhythm } from "../utils/typography"
+// import { rhythm } from "../utils/typography"
 import Navbar from "./Navbar"
 import Footer from "./footer"
 import { redirectTo } from "@reach/router";
@@ -46,8 +46,6 @@ class Layout extends Component {
             style={{
               marginLeft: `auto`,
               marginRight: `auto`,
-              maxWidth: rhythm(24),
-              padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
               marginTop: `${this.state.margin}`,
             }}
           >
