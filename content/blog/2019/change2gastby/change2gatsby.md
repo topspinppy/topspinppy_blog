@@ -5,7 +5,7 @@ description: >-
 date: '2019-08-28T17:33:00.122Z'
 ---
 
-![ขอบคุณ URL: https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/](\img\gatsby.png)
+![ขอบคุณ URL: https://zocada.com/deep-dive-gatsby-building-a-simple-static-blog-using-gatsby-react-and-graphql/](img\gatsby.png)
 
 #### Hi สวัสดีทุกคน ~
 อย่าเรียกว่าเล่าละกัน ให้เรียกว่าอยากบ่น 5555 ยินดีกับตัวเองที่เข้าสู่บ้านหลังใหม่อย่างสมบูรณ์แบบ จริงๆมันเป็นความเท่อย่างนึงนะไม่รู้สิ เราใช้บน Medium มา 3 ปี มีความรู้สึกว่าทำไมเราไม่มีเป็นของตัวเองบ้าง ซึ่งเอาจริงๆเคยคิดจะทำหลายรอบละ ตั้งแต่ จดโดเมน เช่าโฮสต์ php ยุคก่อนโน้น แล้วลง WordPress เมื่อสมัย ปี 1 
