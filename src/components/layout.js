@@ -1,19 +1,23 @@
 import React, { Component, Fragment } from "react"
-// import { rhythm } from "../utils/typography"
 import Navbar from "./Navbar"
 import Footer from "./footer"
 import { redirectTo } from "@reach/router";
 import Jumbopost from "../components/Jumbopost"
+import styled from "styled-components"
+
+const JumboContainer = styled.div`
+  margin-top: 112px;
+`
 
 class Layout extends Component {
   state = {
-    margin: '128px',
+    margin: '112px',
   }
   componentDidMount() {
     const rootPath = `${__PATH_PREFIX__}/`
     if (this.props.location.pathname === rootPath) {
       this.setState({
-        margin: '128px'
+        margin: '112px'
       })
     } else {
       this.setState({
@@ -34,7 +38,9 @@ class Layout extends Component {
       header = (
         <Fragment>
           <Navbar />
-          <Jumbopost title={this.props.posttitle} />
+          <JumboContainer>
+            <Jumbopost title={this.props.posttitle} />
+          </JumboContainer>
         </Fragment>
       )
     }

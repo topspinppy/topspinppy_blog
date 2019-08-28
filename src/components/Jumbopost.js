@@ -8,7 +8,7 @@ const Jumbopost = (props) => {
     }}>
       <Jumbotron fluid>
         <Container>
-          <h1 className="display-3">{props.title}</h1>
+          <h4>{props.title}</h4>
         </Container>
       </Jumbotron>
     </div>

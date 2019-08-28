@@ -11,7 +11,6 @@ import {
   Badge } from 'reactstrap';
 import styled from "styled-components"
 import { graphql, StaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 const Navbar = styled(DefaultNavbar)`
   padding: 1em;
@@ -64,7 +63,7 @@ export default class Example extends React.Component {
                   `}
                   render={data => (
                     <Fragment>
-                      <img src={data.allImageSharp.edges[0].node.original.src} width="70px" />
+                      <a href="/"><img src={data.allImageSharp.edges[0].node.original.src} width="70px" /></a>
                     </Fragment>
                   )}
                />

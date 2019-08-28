@@ -12,6 +12,7 @@ const Containarticle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 30px;
 `
 
 const CardImplement = styled(Card)`

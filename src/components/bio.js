@@ -68,14 +68,6 @@ const Bio = () => {
           <h5> Web Developer & Dream Creator</h5>
         </SiteIntro>
       </Header>
-      {/* <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
-      </p> */}
     </div>
   )
 }
