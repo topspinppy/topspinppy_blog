@@ -3,8 +3,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import get from "lodash/get"
 
 function SEO({ description, lang, meta, title, postcontent }) {
+  console.log("postcontent => ",postcontent.frontmatter.image.childImageSharp.fluid.src)
+  console.log("datasitemetadata => ", `${process.env.NODE_PRODUCTION}`)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -13,6 +16,7 @@ function SEO({ description, lang, meta, title, postcontent }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -45,16 +49,15 @@ function SEO({ description, lang, meta, title, postcontent }) {
           property: `og:type`,
           content: `website`,
         },
-        // {
-        //   property: 'og:image',
-        //   content:
-        //     get(this.props.postContent.frontmatter, 'image', null) ===
-        //     null
-        //       ? ''
-        //       : data.site.siteMetadata.siteUrl +
-        //         this.props.postContent.frontmatter.image.childImageSharp
-        //           .fluid.src,
-        // },
+        {
+          property: 'og:image',
+          content:
+            get(postcontent.frontmatter, 'image', null) ===
+            null
+              ? ''
+              : site.siteMetadata.siteUrl +
+                postcontent.frontmatter.image.childImageSharp.fluid.src,
+        },
         {
           name: `twitter:card`,
           content: `summary`,

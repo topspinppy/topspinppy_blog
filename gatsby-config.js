@@ -5,7 +5,9 @@ module.exports = {
     title: `Topspinppy blog`,
     author: `Topspinppy`,
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://topspin.xyz/`,
+    siteUrl: `${process.env.NODE_ENV === "production"
+    ? "https://topspin.xyz"
+    : "https://development.topspin.xyz"}`,
     social: {
       twitter: `xx`,
     },
