@@ -10,7 +10,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-
+    console.log(post)
     return (
       <Layout location={this.props.location} title={siteTitle} posttitle={post.frontmatter.title}>
         <SEO
@@ -77,6 +77,20 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1200, quality: 80) {
+              base64
+              tracedSVG
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+            }
+          }
+        }
       }
     }
   }
