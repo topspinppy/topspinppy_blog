@@ -6,8 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import get from "lodash/get"
 
 function SEO({ description, lang, meta, title, postcontent }) {
-  console.log("postcontent => ",postcontent.frontmatter.image.childImageSharp.fluid.src)
-  console.log("datasitemetadata => ", `${process.env.NODE_PRODUCTION}`)
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -52,11 +50,11 @@ function SEO({ description, lang, meta, title, postcontent }) {
         {
           property: 'og:image',
           content:
-            get(postcontent.frontmatter, 'image', null) ===
+            get(postcontent, 'image', null) ===
             null
               ? ''
               : site.siteMetadata.siteUrl +
-                postcontent.frontmatter.image.childImageSharp.fluid.src,
+                postcontent.image.childImageSharp.fluid.src,
         },
         {
           name: `twitter:card`,
